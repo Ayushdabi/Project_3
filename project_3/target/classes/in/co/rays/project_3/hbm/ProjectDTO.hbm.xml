@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 08-Jun-2024, 4:50:52 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="in.co.rays.project_3.dto">
+	<class name="ProjectDTO" table="ST_PROJECT">
+		<id name="id" type="java.lang.Long">
+			<column name="ID"></column>
+			<generator class="increment"></generator>
+		</id>
+		<property name="projectName" type="java.lang.String">
+			<column name="PROJECTNAME" />
+		</property>
+		<property name="teamName" type="java.lang.String">
+			<column name="TEAMNAME" />
+		</property>
+		<property name="submitDate" type="java.util.Date">
+			<column name="SUBMITDATE" />
+		</property>
+		<property name="ProjectNo" type="java.lang.String">
+			<column name="PROJECTNO" />
+		</property>
+	</class>
+</hibernate-mapping>

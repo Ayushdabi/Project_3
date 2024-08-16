@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 04-Jun-2024, 4:35:48 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="in.co.rays.project_3.dto">
+    <class name="OrderDTO" table="ST_ORDER">
+		<id name="id" type="java.lang.Long">
+			<column name="ID"></column>
+			<generator class="increment"></generator>
+		</id>
+        <property name="orderName" type="java.lang.String">
+            <column name="ORDERNAME" />
+        </property>
+        <property name="Category" type="java.lang.String">
+            <column name="CATEGORY" />
+        </property>
+        <property name="address" type="java.lang.String">
+            <column name="ADDRESS" />
+        </property>
+        <property name="price" type="java.lang.String">
+            <column name="PRICE" />
+        </property>
+        <property name="orderDate" type="java.util.Date">
+            <column name="ORDERDATE" />
+        </property>
+    </class>
+</hibernate-mapping>
